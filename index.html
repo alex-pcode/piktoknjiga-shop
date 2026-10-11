@@ -1,0 +1,314 @@
+<!doctype html><html lang="sr-Latn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
+<title>Piktoknjiga — knjige sa piktogramima za svu decu</title><meta name="description" content="Poznate priče prilagođene PCS piktogramima, za početnike u čitanju i decu kojoj je potrebna vizuelna podrška. Deda i repa, Tom Sojer, Tri praseta, Zlatokosa. Plaćanje pouzećem."><link rel="icon" href="img/logo.jpg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"><style>
+:root{--red:#e8114a;--red-d:#b80c39;--yel:#f8c12b;--blue:#4091d8;--teal:#39b99a;--ink:#1f2430;--muted:#5d6472;--cream:#fffaf0;--paper:#fff;--line:#ece3d0;--soft:#fdf1d6;--r:20px;--shadow:0 14px 34px -18px rgba(31,36,48,.45)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button,select{font:inherit;cursor:pointer;color:inherit}button{background:none;border:0}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.1;color:var(--ink);letter-spacing:-.01em}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:14px 24px;border-radius:14px;font-weight:800;font-size:15px;border:2px solid var(--ink);transition:transform .15s,background .15s;white-space:nowrap}
+.btn-p{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 4px 0 var(--red-d)}.btn-p:hover{transform:translateY(-2px)}.btn-p:active{transform:translateY(2px);box-shadow:none}
+.btn-g{background:transparent;color:var(--ink)}.btn-g:hover{background:var(--ink);color:#fff}
+.btn.block{display:flex;width:100%}
+.dots{display:inline-flex;gap:5px;vertical-align:middle}.dots i{width:12px;height:12px;display:block}
+.dots i:nth-child(1){background:var(--blue);border-radius:3px}.dots i:nth-child(2){background:var(--teal);border-radius:3px}.dots i:nth-child(3){background:var(--yel);border-radius:50%}.dots i:nth-child(4){background:var(--red);border-radius:50% 50% 50% 0;transform:rotate(-45deg)}
+.announce{background:var(--ink);color:#fff;font-size:13px;font-weight:700;text-align:center;padding:9px 16px}
+.announce b{color:var(--yel)}
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,250,240,.95);backdrop-filter:blur(10px);border-bottom:2px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Fraunces,serif;font-weight:800;font-size:21px;color:var(--ink)}
+.logo img{width:44px;height:44px;object-fit:contain}
+nav.main{display:flex;gap:24px;font-weight:800;font-size:14px}nav.main a:hover,nav.main a.on{color:var(--red)}
+.cartbtn{display:flex;align-items:center;gap:8px;border:2px solid var(--ink);border-radius:14px;padding:9px 14px;font-weight:800;background:#fff}
+.cartbtn svg{width:20px;height:20px;stroke:var(--ink);fill:none;stroke-width:2}
+#cnt{background:var(--red);color:#fff;font-size:12px;min-width:20px;height:20px;border-radius:10px;display:grid;place-items:center;padding:0 5px}#cnt:empty{display:none}
+@media(max-width:860px){nav.main{display:none}}
+/* drawer */
+.ovl{position:fixed;inset:0;background:rgba(20,22,30,.5);z-index:70;opacity:0;pointer-events:none;transition:.2s}.ovl.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);background:var(--cream);z-index:75;transform:translateX(105%);transition:transform .25s;display:flex;flex-direction:column}.drawer.on{transform:none}
+.dhead{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:2px solid var(--line)}.dhead h3{font-size:22px}
+.x{width:38px;height:38px;border-radius:50%;border:2px solid var(--line);font-size:20px;line-height:1}
+.dbody{flex:1;overflow:auto;padding:12px 18px}.dfoot{padding:14px 18px;border-top:2px solid var(--line);background:#fff}
+.line{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:center}
+.line img{width:64px;height:64px;object-fit:cover;border-radius:12px;background:var(--line)}
+.line .n{font-weight:800;line-height:1.25}.line .v{font-size:13px;color:var(--muted)}
+.qty{display:inline-flex;align-items:center;border:2px solid var(--line);border-radius:12px;background:#fff;margin-top:6px}
+.qty button{width:34px;height:34px;font-weight:800;font-size:18px}.qty span{min-width:26px;text-align:center;font-weight:800}
+.rm{font-size:12px;color:var(--muted);text-decoration:underline;display:block;margin-top:4px}
+.tot span:last-child{white-space:nowrap}.tot{display:flex;justify-content:space-between;gap:12px;font-weight:700;padding:3px 0}.tot.big{font-size:19px;font-weight:800}
+.hint{font-size:13px;color:var(--muted);background:var(--soft);border-radius:10px;padding:8px 10px;margin:8px 0}
+.empty{text-align:center;color:var(--muted);padding:44px 0}
+/* checkout */
+.co{position:fixed;inset:0;z-index:90;background:var(--cream);overflow:auto;display:none}.co.on{display:block}
+.co .wrap{max-width:920px;padding-top:16px;padding-bottom:60px}
+.cohead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+.cogrid{display:grid;gap:22px}@media(min-width:800px){.cogrid{grid-template-columns:1.2fr 1fr}}
+.card{background:#fff;border:2px solid var(--line);border-radius:var(--r);padding:18px}.card h3{font-size:19px;margin-bottom:12px}
+label.f{display:block;font-weight:800;font-size:14px;margin-bottom:12px}
+label.f input,label.f textarea{display:block;width:100%;margin-top:4px;font:inherit;font-weight:600;padding:12px 14px;border:2px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
+label.f input:focus,label.f textarea:focus{outline:0;border-color:var(--blue)}
+.two{display:grid;gap:12px}@media(min-width:520px){.two{grid-template-columns:1fr 1fr}}
+.pay{display:flex;gap:10px;align-items:flex-start;border:2px solid var(--teal);background:#eefaf6;border-radius:12px;padding:12px;font-weight:800}
+.pay small{display:block;font-weight:600;color:var(--muted)}
+.done{text-align:center;padding:40px 0}.done .ok{width:76px;height:76px;border-radius:50%;background:var(--teal);color:#fff;font-size:2.4rem;display:grid;place-items:center;margin:0 auto 16px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:12px 20px;border-radius:14px;font-weight:700;z-index:95;opacity:0;transition:.25s;pointer-events:none;max-width:92vw;text-align:center}.toast.on{opacity:1;transform:translate(-50%,0)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+section.block{padding:80px 0}
+.sec-head h2{font-size:clamp(28px,4vw,42px);margin-top:10px}.sec-head p{color:var(--muted);max-width:60ch;margin-top:10px;font-size:17px}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+.rev{background:#fff;border:2px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:12px;position:relative}
+.rev:before{content:"“";font-family:Fraunces,serif;font-size:56px;line-height:.6;color:var(--yel)}
+.rev p{font-size:16px;font-weight:600;flex:1}.rev b{font-size:13px;color:var(--red)}.rev small{font-weight:600;color:var(--muted)}
+@media(max-width:900px){.revs{grid-template-columns:1fr 1fr}}@media(max-width:600px){.revs{grid-template-columns:1fr}section.block{padding:56px 0}}
+details{border-bottom:2px solid var(--line);padding:16px 0}summary{cursor:pointer;list-style:none;font-weight:800;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";font-size:22px;line-height:1;transition:transform .2s;color:var(--red)}details[open] summary::after{transform:rotate(45deg)}
+details .inner{color:var(--muted);margin-top:10px;font-size:15px}
+footer{background:var(--ink);color:#d9dce3;padding:44px 0 28px;font-size:14px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}footer h4{color:#fff;font-family:Fraunces,serif;font-size:17px;margin-bottom:8px}
+footer a{text-decoration:underline;text-underline-offset:3px}footer li{list-style:none;margin:4px 0}
+footer .bot{border-top:1px solid #3a4050;margin-top:26px;padding-top:16px;font-size:12px;color:#9aa0ad}
+@media(max-width:760px){footer .cols{grid-template-columns:1fr}}
+select.sel{width:100%;padding:10px 12px;border:2px solid var(--line);border-radius:12px;background:#fff;font-weight:700;font-size:14px}
+.hero{padding:48px 0 70px;background:radial-gradient(circle at 85% 20%,#fde7a8 0,transparent 45%),linear-gradient(180deg,#fff3d6,var(--cream))}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(36px,5.4vw,66px);margin:16px 0 18px}.hero h1 em{font-style:normal;color:var(--red)}
+.hero p.lead{font-size:18px;color:#3d4350;max-width:48ch;margin-bottom:24px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero .pic{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff;aspect-ratio:4/5;position:relative;transform:rotate(1.5deg)}
+.hero .pic img{width:100%;height:100%;object-fit:cover}
+.pill{position:absolute;left:14px;bottom:14px;background:var(--yel);color:var(--ink);font-weight:800;font-size:13px;padding:8px 14px;border-radius:12px}
+.trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;font-size:13px;font-weight:800}
+.trust span{background:#fff;border:2px solid var(--line);border-radius:12px;padding:7px 12px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:32px}
+.pc{background:#fff;border:2px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.pc .m{aspect-ratio:1/1;overflow:hidden;background:var(--soft);position:relative}.pc .m img{width:100%;height:100%;object-fit:cover;transition:transform .3s}.pc:hover .m img{transform:scale(1.03)}
+.pc .tag{position:absolute;top:10px;left:10px;background:var(--red);color:#fff;font-size:12px;font-weight:800;padding:5px 10px;border-radius:10px}
+.pc .tag.y{background:var(--yel);color:var(--ink)}.pc .tag.t{background:var(--teal)}
+.pc .b{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pc h3{font-size:20px}.pc .d{font-size:14px;color:var(--muted);flex:1}
+.pc .pr{font-weight:800;font-size:19px}.pc .pr small{font-size:12px;color:var(--muted);font-weight:700}
+.pc .acts{display:grid;gap:8px;margin-top:6px}
+.pc .btn{padding:11px 12px;font-size:14px}
+.pc .opts{display:grid;gap:6px;margin-top:4px}
+.pc.sold{opacity:.7}.pc.sold .btn{pointer-events:none;background:#ddd;border-color:#ddd;color:#666;box-shadow:none}
+.feature{display:grid;grid-template-columns:1fr 1fr;background:#fff;border:2px solid var(--line);border-radius:28px;overflow:hidden;margin-top:32px}
+.feature .m{min-height:100%;overflow:hidden;background:#c8935a}.feature .m img{width:100%;height:100%;object-fit:cover}
+.feature .b{padding:38px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.feature h3{font-size:clamp(26px,3vw,38px)}.feature .pr{font-size:26px;font-weight:800}
+.feature ul{list-style:none}.feature li{padding:4px 0 4px 28px;position:relative;font-weight:600}.feature li:before{content:"";position:absolute;left:0;top:10px;width:14px;height:14px;border-radius:4px;background:var(--teal)}
+.feature li:nth-child(2):before{background:var(--blue)}.feature li:nth-child(3):before{background:var(--yel);border-radius:50%}.feature li:nth-child(4):before{background:var(--red)}
+.feature .cta{display:flex;gap:10px;flex-wrap:wrap}
+.how{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}
+.how div{background:#fff;border:2px solid var(--line);border-radius:var(--r);padding:22px}
+.how .n{font-size:13px;width:46px;height:46px;border-radius:12px;display:grid;place-items:center;color:#fff;font-family:Fraunces;font-weight:800;font-size:15px;margin-bottom:12px}
+.how b{display:block;margin-bottom:4px;font-size:17px}.how p{font-size:14px;color:var(--muted)}
+.how div:nth-child(1) .n{background:var(--blue)}.how div:nth-child(2) .n{background:var(--teal)}.how div:nth-child(3) .n{background:var(--yel);color:var(--ink)}.how div:nth-child(4) .n{background:var(--red)}
+.story{background:var(--ink);color:#e7e9ee;border-radius:36px;margin:0 20px}
+.story .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:44px;align-items:center}
+.story h2{color:#fff}.story .eyebrow{color:var(--yel)}.story p{margin-top:14px;color:#c9cdd6;max-width:56ch}
+.story .pics{display:grid;grid-template-columns:1fr 1fr;gap:12px}.story .pics img{border-radius:18px;aspect-ratio:3/4;object-fit:cover;width:100%}
+.story blockquote{font-family:Fraunces,serif;font-size:22px;color:#fff;border-left:4px solid var(--red);padding-left:16px;margin-top:20px}
+.awards{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;margin-top:30px}
+.awards .aw{width:260px;border-radius:20px;overflow:hidden;border:2px solid var(--line);background:#fff}
+.awlist{display:grid;gap:12px}.awlist>div{background:#fff;border:2px solid var(--line);border-radius:16px;padding:16px 18px}.awlist b{display:block;font-size:17px}.awlist span{font-size:14px;color:var(--muted)}
+.media{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.media span{background:#fff;border:2px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:800;font-size:13px}
+.mbox{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px;max-width:920px}
+@media(max-width:1000px){.grid{grid-template-columns:1fr 1fr}.how{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:30px}.hero .wrap>.pic{order:-1;max-height:440px;aspect-ratio:auto;transform:none}.feature{grid-template-columns:1fr}.feature .m{aspect-ratio:4/3}.story .wrap{grid-template-columns:1fr}.story{margin:0 10px}.awards{grid-template-columns:1fr}.awards .aw{width:100%;max-width:300px}}
+@media(max-width:560px){.feature .b{padding:24px}.how{grid-template-columns:1fr}.grid{gap:12px}.pc .b{padding:12px}.pc h3{font-size:17px}.pc .d{font-size:13px}.mbox{grid-template-columns:1fr}}
+@media(max-width:380px){.grid{grid-template-columns:1fr}}
+
+</style></head><body>
+<div class="announce">Besplatna dostava za porudžbine od <b>3.000 din</b> · Post Express „danas za sutra“ · Plaćanje pouzećem</div>
+<header class="site"><div class="wrap">
+<a class="logo" href="index.html"><img src="img/logo.jpg" alt="Piktoknjiga logo"><span>Piktoknjiga</span></a>
+<nav class="main" aria-label="Glavna navigacija"><a  href="deda-i-repa.html">Deda i repa</a><a href="index.html#knjige">Knjige</a><a href="index.html#pokret">Komunikacija u pokretu</a><a href="index.html#majice">Majice</a><a href="index.html#utisci">Utisci</a><a href="index.html#faq">Pitanja</a></nav>
+<button class="cartbtn" id="openCart" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Korpa<span id="cnt"></span></button>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div><span class="dots"><i></i><i></i><i></i><i></i></span>
+<h1>Poznate priče koje <em>svako dete</em> može da pročita</h1>
+<p class="lead">Piktoknjige su klasične priče prilagođene piktogramima iz međunarodnog PCS sistema. Za početnike u čitanju i decu kojoj je potrebna dodatna vizuelna podrška, jer Piktoknjige su za svu decu.</p>
+<div class="cta"><a class="btn btn-p" href="deda-i-repa.html">Poruči „Dedu i repu“</a><a class="btn btn-g" href="#knjige">Sve knjige</a></div>
+<div class="trust"><span>Grand prix „Igračke sa svrhom“</span><span>PCS piktogrami</span><span>Dostava „danas za sutra“</span><span>Plaćanje pouzećem</span></div></div>
+<div class="pic"><img src="img/deda-cover.jpg" alt="Knjiga Deda i repa u rukama" fetchpriority="high" style="object-position:center 40%"><span class="pill">Novo: „Deda i repa“ · 36 strana</span></div>
+</div></section>
+
+<section class="block" id="nova" style="padding-top:24px"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">Četvrta Piktoknjiga</span><h2>Povuci, potegni… i evo je!</h2></div>
+<div class="feature"><div class="m"><img src="img/deda-stack.jpg" alt="Naslovnica knjige Deda i repa" loading="lazy"></div>
+<div class="b"><span class="eyebrow">Narodna priča sa piktogramima</span><h3>Deda i repa</h3>
+<p style="color:var(--muted)">Priča o zajedništvu i solidarnosti koja nas uči da niko ne mora sve sam i da je svaki doprinos važan.</p>
+<ul><li>Piktogram POMOĆ ponavlja se kroz celu priču</li><li>Rečnik piktograma na kraju knjige</li><li>Likovi za isecanje i pozadina za prepričavanje</li><li>36 strana · ilustracije Maša Pavlović</li></ul>
+<div class="pr">2.000 din</div>
+<div class="cta"><button class="btn btn-p" data-add="deda">Dodaj u korpu</button><a class="btn btn-g" href="deda-i-repa.html">Pogledaj knjigu</a></div></div></div>
+</div></section>
+
+<section class="block" id="knjige" style="padding-top:20px"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">Piktoknjige</span><h2>Sve četiri priče</h2><p>Svaka knjiga donosi poznatu priču i jedan piktogram koji dete može da ponese u svakodnevni život.</p></div>
+<div class="grid">
+<article class="pc"><a class="m" href="deda-i-repa.html"><img src="img/deda-cover.jpg" alt="Deda i repa" loading="lazy"><span class="tag">Novo</span></a><div class="b"><h3><a href="deda-i-repa.html">Deda i repa</a></h3><p class="d">Narodna priča uz piktogram POMOĆ, rečnik i likove za igru.</p><div class="pr">2.000 din</div><div class="acts"><button class="btn btn-p block" data-add="deda">Dodaj u korpu</button></div></div></article>
+<article class="pc"><div class="m"><img src="img/tom-sojer.jpg" alt="Tom Sojer farba ogradu" loading="lazy"><span class="tag y">Lektira 5. razred</span></div><div class="b"><h3>Tom Sojer farba ogradu</h3><p class="d">Odlomak iz romana Marka Tvena, uz PRVO/POSLE za redosled i predvidivost.</p><div class="pr">2.000 din</div><div class="acts"><button class="btn btn-p block" data-add="tom">Dodaj u korpu</button></div></div></article>
+<article class="pc"><div class="m"><img src="img/tri-praseta.jpg" alt="Tri praseta" loading="lazy"><span class="tag t">Grand prix 2024</span></div><div class="b"><h3>Tri praseta</h3><p class="d">Prva Piktoknjiga. Uz priču dete uči gest za NE.</p><div class="pr">2.000 din</div><div class="acts"><button class="btn btn-p block" data-add="praseta">Dodaj u korpu</button></div></div></article>
+<article class="pc"><div class="m"><img src="img/zlatokosa.jpg" alt="Zlatokosa i tri medveda" loading="lazy"></div><div class="b"><h3>Zlatokosa i tri medveda</h3><p class="d">Priča o GRANICAMA: tuđe stvari ne uzimamo i ne diramo bez pitanja.</p><div class="pr">2.000 din</div><div class="acts"><button class="btn btn-p block" data-add="zlatokosa">Dodaj u korpu</button></div></div></article>
+</div></div></section>
+
+<section class="block" id="kako" style="padding-top:20px"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">Kako Piktoknjige pomažu</span><h2>Priča u knjizi, simbol u životu</h2><p>Iz svake priče izdvajamo nešto što je korisno i posle čitanja. Ne učimo dete samo šta simbol znači, učimo ga da simbol može da koristi da nešto kaže.</p></div>
+<div class="how">
+<div><span class="n">NE</span><b>Tri praseta</b><p>Gest za NE, da dete može jasno da pokaže kada nešto ne želi.</p></div>
+<div><span class="n">1→2</span><b>Tom Sojer farba ogradu</b><p>PRVO/POSLE, za razumevanje redosleda i predvidivost.</p></div>
+<div><span class="n">STOP</span><b>Zlatokosa i tri medveda</b><p>GRANICE: ne uzimamo i ne diramo tuđe stvari bez pitanja.</p></div>
+<div><span class="n">♥</span><b>Deda i repa</b><p>POMOĆ: simbol se ponavlja kroz priču i nalazi se u rečniku na kraju knjige.</p></div>
+</div>
+<p style="margin-top:22px;color:var(--muted);max-width:70ch"><b style="color:var(--ink)">Modelovanje:</b> ne očekujemo da dete odmah samo počne da koristi simbol. Kada vidimo da mu je potrebna pomoć, pokažemo simbol i kažemo: „Treba ti pomoć. Pomoć.“ Tako dete povezuje simbol, reč, potrebu i stvarnu situaciju.</p>
+</div></section>
+
+<section class="block" id="pokret" style="padding-top:20px"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">Komunikacija u pokretu</span><h2>Komunikacija je potrebna svuda. Zato je nosimo sa sobom.</h2><p>Praktični predmeti sa komunikacijskim simbolima za školu, prodavnicu i sve trenutke kada nam je važno da sličice budu pri ruci.</p></div>
+<div class="grid">
+<article class="pc"><div class="m"><img src="img/ceger.jpg" alt="Ceger za prodavnicu sa 49 simbola" loading="lazy" style="object-position:center 70%"></div><div class="b"><h3>Ceger za prodavnicu</h3><p class="d">49 simbola za kupovinu, od ulaska u prodavnicu do plaćanja. Reciklirani pamuk 300 g/m², ojačane drške, pranje na 40 °C.</p><div class="pr">1.750 din</div><div class="acts"><button class="btn btn-p block" data-add="ceger">Dodaj u korpu</button></div></div></article>
+<article class="pc"><div class="m"><img src="img/ranac.jpg" alt="Ranac Škola sa 42 simbola" loading="lazy"></div><div class="b"><h3>Ranac „Škola“</h3><p class="d">Ranac sa 42 simbola za osnovnu komunikaciju u školi.</p><div class="pr">2.500 din</div><div class="acts"><button class="btn btn-p block" data-add="ranac">Dodaj u korpu</button></div></div></article>
+<article class="pc"><div class="m"><img src="img/ranac-set.jpg" alt="Back to School Pack: ranac, pernica i kutija za užinu" loading="lazy"><span class="tag y">Besplatna dostava</span></div><div class="b"><h3>Back to School Pack</h3><p class="d">Ranac „Škola“, pernica i kutija za užinu sa simbolima, kao na slici.</p><div class="pr">5.000 din</div><div class="acts"><button class="btn btn-p block" data-add="pack">Dodaj u korpu</button></div></div></article>
+<article class="pc"><div class="m"><img src="img/pernica.jpg" alt="Pernica u crnoj i crvenoj boji" loading="lazy"></div><div class="b" data-opts><h3>Pernica</h3><p class="d">18 simbola, vizuelni podsetnici za rad na času. Dve odvojene pregrade sa rajsferšlusom.</p><div class="opts"><select class="sel" aria-label="Boja"><option>Crvena</option><option>Crna</option></select></div><div class="pr">1.500 din</div><div class="acts"><button class="btn btn-p block" data-add="pernica">Dodaj u korpu</button></div></div></article>
+</div>
+<p style="margin-top:16px;color:var(--muted);font-size:14px">Ceger za plažu (40 simbola) je sezonski proizvod; model za leto 2026. je rasprodat.</p>
+</div></section>
+
+<section class="block" id="majice" style="padding-top:20px"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">Savršen par by Piktoknjiga</span><h2>Majice za parove koji se savršeno razumeju</h2><p>Tri situacije, po dve majice: jedno pravi kokice, drugo bira film. A kako je to kod vas?</p></div>
+<div class="mbox">
+<article class="pc"><div class="m"><img src="img/majice-auto.jpg" alt="Dve majice Vožnja kolima" loading="lazy"></div><div class="b" data-opts><h3>Majica „Savršen par“</h3><p class="d">Crna majica sa trakom od tri piktograma. Univerzalan, ravan muški kroj.</p>
+<div class="opts"><select class="sel" aria-label="Majica"><option>Filmsko veče – Ja pravim kokice</option><option>Filmsko veče – Ja biram film</option><option>Vožnja kolima – Ja vozim auto</option><option>Vožnja kolima – Ja biram muziku</option><option>Dan za šoping – Ja idem u šoping</option><option>Dan za šoping – Ja nosim kese</option></select>
+<select class="sel" aria-label="Veličina"><option>Veličina M</option><option>Veličina L</option><option>Veličina XL</option><option>Veličina S (po porudžbini)</option></select></div>
+<div class="pr">2.500 din</div><div class="acts"><button class="btn btn-p block" data-add="majica">Dodaj u korpu</button></div></div></article>
+<article class="pc"><div class="m"><img src="img/majice.jpg" alt="Sve majice Savršen par" loading="lazy"><span class="tag">Par + poklon kutija</span></div><div class="b" data-opts><h3>Savršen par – dve majice</h3><p class="d">Obe majice iz iste situacije, u poklon kutiji, uz besplatnu dostavu.</p>
+<div class="opts"><select class="sel" aria-label="Situacija"><option>Filmsko veče</option><option>Vožnja kolima</option><option>Dan za šoping</option></select>
+<select class="sel" aria-label="Veličina prve majice"><option>Prva majica M</option><option>Prva majica L</option><option>Prva majica XL</option><option>Prva majica S (po porudžbini)</option></select>
+<select class="sel" aria-label="Veličina druge majice"><option>Druga majica M</option><option>Druga majica L</option><option>Druga majica XL</option><option>Druga majica S (po porudžbini)</option></select></div>
+<div class="pr">5.000 din <small>besplatna dostava</small></div><div class="acts"><button class="btn btn-p block" data-add="par">Dodaj par u korpu</button></div></div></article>
+</div></div></section>
+
+<section class="story block" id="prica"><div class="wrap">
+<div><span class="eyebrow">Naša priča</span><h2 style="font-size:clamp(28px,4vw,42px);margin-top:10px">Nastalo iz lične potrebe</h2>
+<p>Piktoknjigu je osmislila Biljana Stojanović iz Niša, mama dečaka sa autizmom. Kako bi svom sinu olakšala komunikaciju, osmislila je prvu Piktoknjigu: „Tri praseta“, prvu knjigu u Srbiji napisanu piktogramima.</p>
+<p>Danas imamo četiri Piktoknjige i liniju „Komunikacija u pokretu“, a naš cilj nije samo da popunimo prazninu na policama biblioteka. Inkluzija je i pitanje kako mi, kao društvo, gledamo na različitost.</p>
+<blockquote>Ovo nisu knjige za „drugačiju“ decu. Ovo je drugačiji pristup koji književnost čini dostupnom svima.</blockquote></div>
+<div class="pics"><img src="img/stand.jpg" alt="Sve Piktoknjige i cegeri na štandu" loading="lazy"><img src="img/deda-likovi.jpg" alt="Isecanje likova iz knjige Deda i repa" loading="lazy"></div>
+</div></section>
+
+<section class="block" id="nagrade"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">Nagrade i mediji</span><h2>Najbolja inkluzivna igračka u Srbiji, dva puta</h2></div>
+<div class="awards"><div class="aw"><img src="img/nagrada.jpg" alt="Tri praseta, Grand prix 2024 Igračke sa svrhom, inkluzivna igračka" loading="lazy"><img src="img/tri-praseta.jpg" alt="" loading="lazy"></div>
+<div class="awlist"><div><b>Grand prix „Igračke sa svrhom“ 2024</b><span>Inkluzivna igračka: „Tri praseta“</span></div><div><b>Grand prix „Igračke sa svrhom“ 2026</b><span>Inkluzivna igračka: Piktoknjiga</span></div>
+<div><b>O Piktoknjizi su govorili</b><div class="media"><span>RTS Dnevnik</span><span>RTS Mesto za nas</span><span>Jutro na Prvoj</span><span>Nova</span><span>Euronews Srbija</span><span>Blic</span><span>Telegraf</span><span>Južne vesti</span><span>K::CN</span></div></div></div></div>
+</div></section>
+
+<section class="block" id="utisci" style="padding-top:20px;background:linear-gradient(180deg,var(--cream),#fff3d6)"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">#vašiutisci</span><h2>Mame javljaju</h2><p>Poruke koje smo dobili od roditelja, prenete onako kako su ih napisali.</p></div>
+<div class="revs">
+<div class="rev"><p>Kupili smo Tri praseta kao poklon nama veoma dragoj devojčici, ali kada smo videli kako izgleda odlučili smo da kupimo i za nas. Deci je super zanimljiva. Iako su mnogo mali i daleko smo od samostalnog čitanja, prstići samo prelaze preko sličica i prepričavaju šta su zapamtili</p><b>Milica <small>· Tri praseta</small></b></div>
+<div class="rev"><p>Upravo smo pročitali celu knjigu i mladi gospodin je pratio svaki korak. Zaista je knjiga jako dobro urađena i savršena za neverbalnu decu bez obzira na uzrast.</p><b>Mama <small>· poruka Piktoknjizi</small></b></div>
+<div class="rev"><p>Jedva čekam Vukija sutra da se vrati i vidi. Dunja se oduševila. Hvala do neba […], ništa bolje skoro nisam videla.</p><b>Gordana</b></div>
+<div class="rev"><p>Nisam ni znala da je moguće na tako jasan i prijemčiv način im omogućiti da prate priču</p><b>Mama <small>· poruka Piktoknjizi</small></b></div>
+<div class="rev"><p>Malo je reći da smo oduševljeni! Hvala Vam i na karticama za igru pamćenja i na napisanim rečima!</p><b>Mama <small>· poruka Piktoknjizi</small></b></div>
+<div class="rev"><p>Radujemo se novim naslovima. Knjiga je odlična ,za djecu koja imaju poteskoce .Tako je lijepo osmisljena da ih zainteresuje</p><b>Mama <small>· poruka Piktoknjizi</small></b></div>
+</div></div></section>
+
+<section class="block" id="faq"><div class="wrap" style="max-width:800px">
+<div class="sec-head"><span class="eyebrow">Pitanja i odgovori</span><h2>Često postavljana pitanja</h2></div>
+<div style="margin-top:24px;border-top:2px solid var(--line)">
+<details><summary>Za koga su Piktoknjige?</summary><div class="inner"><p>Za početnike u čitanju i decu kojoj je potrebna dodatna vizuelna podrška: neverbalnu decu, decu sa autizmom i decu kojoj je klasičan format knjige težak. Ali Piktoknjige su za svu decu: tekst prate slike, pa priču mogu da prate i oni koji tek uče slova.</p></div></details>
+<details><summary>Šta su PCS piktogrami?</summary><div class="inner"><p>Tekst je praćen piktogramima iz međunarodnog PCS sistema. Svaka reč ima svoju sličicu, pa dete može samo da „pročita“ rečenicu prateći simbole.</p></div></details>
+<details><summary>Kako da čitamo zajedno?</summary><div class="inner"><p>Čitajte polako i pokazujte simbole prstom. Simbol koji se ponavlja (NE, PRVO/POSLE, GRANICE, POMOĆ) pokažite i u svakodnevnim situacijama i izgovorite reč. Uz „Dedu i repu“ dobijate i likove za isecanje i pozadinu za prepričavanje i dramatizaciju.</p></div></details>
+<details><summary>Kako se poručuje i plaća?</summary><div class="inner"><p>Dodajte proizvode u korpu, upišite ime, adresu i telefon i potvrdite porudžbinu. Javljamo se telefonom radi potvrde, a plaćate pouzećem kuriru kada preuzmete paket.</p></div></details>
+<details><summary>Koliko košta dostava?</summary><div class="inner"><p>Šaljemo Post Express-om, uslugom „danas za sutra“. Za porudžbine od 3.000 din i više dostava je besplatna. Besplatnu dostavu imaju i par majica „Savršen par“ i Back to School Pack.</p></div></details>
+<details><summary>Koje su veličine majica?</summary><div class="inner"><p>Univerzalan, ravan muški kroj u veličinama M, L i XL. Veličina S se radi po porudžbini.</p></div></details>
+</div>
+<p style="text-align:center;margin-top:28px;color:var(--muted)">Imate još neko pitanje? <a href="https://www.instagram.com/piktoknjiga/" target="_blank" rel="noopener" style="color:var(--red);font-weight:800;text-decoration:underline">Pišite nam na Instagramu</a></p>
+<div style="text-align:center;margin-top:20px"><a class="btn btn-p" href="#knjige">Izaberi Piktoknjigu</a></div></div></section>
+</main>
+<footer><div class="wrap"><div class="cols">
+<div><a class="logo" href="index.html" style="color:#fff"><img src="img/logo.jpg" alt="" style="background:#fff;border-radius:10px;padding:3px"><span>Piktoknjiga</span></a>
+<p style="margin-top:12px;max-width:42ch">Jedinstvene knjige za početnike u čitanju i decu kojoj je potrebna dodatna vizuelna podrška. Piktoknjige su za svu decu.</p></div>
+<div><h4>Prodavnica</h4><ul><li><a href="deda-i-repa.html">Deda i repa</a></li><li><a href="index.html#knjige">Sve Piktoknjige</a></li><li><a href="index.html#pokret">Komunikacija u pokretu</a></li><li><a href="index.html#majice">Majice Savršen par</a></li></ul></div>
+<div><h4>Pomoć</h4><ul><li>Dostava: Post Express, „danas za sutra“</li><li>Besplatna dostava od 3.000 din</li><li>Plaćanje pouzećem</li><li><a href="https://www.instagram.com/piktoknjiga/" target="_blank" rel="noopener">Pitanja? Pišite nam na Instagramu @piktoknjiga</a></li></ul></div>
+</div><div class="bot">© 2026 Piktoknjiga · Tekst praćen piktogramima iz međunarodnog PCS sistema</div></div></footer>
+<div class="ovl" id="ovl"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Korpa"><div class="dhead"><h3>Vaša korpa</h3><button class="x" id="closeCart" aria-label="Zatvori">&times;</button></div><div class="dbody" id="dbody"></div><div class="dfoot" id="dfoot"></div></aside>
+<div class="co" id="co"><div class="wrap">
+<div class="cohead"><a class="logo" href="index.html"><img src="img/logo.jpg" alt=""><span>Piktoknjiga</span></a><button class="btn btn-g" id="backCart" type="button">&larr; Korpa</button></div>
+<div id="coMain"><h2 style="font-size:30px;margin-bottom:16px">Porudžbina</h2>
+<form id="coForm" novalidate><div class="cogrid"><div>
+<div class="card"><h3>Podaci za dostavu</h3>
+<label class="f">Ime i prezime<input name="ime" autocomplete="name" required></label>
+<div class="two"><label class="f">Telefon<input name="tel" type="tel" autocomplete="tel" pattern="\+?[0-9][0-9 \/\(\)\-]{5,}" required></label><label class="f">Email (nije obavezno)<input name="mail" type="email" autocomplete="email"></label></div>
+<label class="f">Adresa (ulica i broj)<input name="adresa" autocomplete="street-address" required></label>
+<div class="two"><label class="f">Grad / mesto<input name="grad" autocomplete="address-level2" required></label><label class="f">Poštanski broj<input name="pb" inputmode="numeric" autocomplete="postal-code"></label></div>
+<label class="f">Napomena (nije obavezno)<textarea name="nap" rows="2" placeholder="npr. posveta, poklon pakovanje, vreme dostave"></textarea></label></div>
+<div class="card" style="margin-top:16px"><h3>Plaćanje</h3><div class="pay"><input type="radio" checked aria-label="Pouzećem"><div>Plaćanje pouzećem<small>Plaćate kuriru Post Express-a kada preuzmete paket.</small></div></div></div>
+</div><div><div class="card" style="position:sticky;top:12px"><h3>Pregled porudžbine</h3><div id="coSum"></div><button class="btn btn-p block" type="submit" style="margin-top:14px">Potvrdi porudžbinu</button><p style="font-size:12px;color:var(--muted);margin-top:10px;text-align:center">Javljamo se telefonom radi potvrde pre slanja.</p></div></div></div></form></div>
+<div id="coDone" class="done" hidden><div class="ok">&#10003;</div><h2 style="font-size:30px">Hvala na porudžbini!</h2><p style="margin:12px auto;max-width:480px" id="doneTxt"></p><div class="card" style="max-width:480px;margin:18px auto;text-align:left" id="doneSum"></div><a class="btn btn-p" href="index.html">Nazad na prodavnicu</a></div>
+</div></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const P={
+ deda:{name:'Deda i repa',price:2000,img:'img/deda-cover.jpg'},
+ tom:{name:'Tom Sojer farba ogradu',price:2000,img:'img/tom-sojer.jpg'},
+ praseta:{name:'Tri praseta',price:2000,img:'img/tri-praseta.jpg'},
+ zlatokosa:{name:'Zlatokosa i tri medveda',price:2000,img:'img/zlatokosa.jpg'},
+ majica:{name:'Majica „Savršen par“',price:2500,img:'img/majice.jpg'},
+ par:{name:'Majice „Savršen par“ – par',price:5000,img:'img/majice.jpg',free:1},
+ ceger:{name:'Ceger za prodavnicu',price:1750,img:'img/ceger.jpg'},
+ ranac:{name:'Ranac „Škola“',price:2500,img:'img/ranac.jpg'},
+ pack:{name:'Back to School Pack',price:5000,img:'img/ranac-set.jpg',free:1},
+ pernica:{name:'Pernica',price:1500,img:'img/pernica.jpg'}
+};
+const SHIP=450,FREE=3000;
+const fmt=n=>n.toLocaleString('de-DE')+' din';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+let cart=[];try{cart=JSON.parse(localStorage.getItem('pikto-cart')||'[]')}catch(e){}
+cart=cart.filter(c=>P[c.id]);
+const save=()=>{try{localStorage.setItem('pikto-cart',JSON.stringify(cart))}catch(e){}};
+function add(id,v,qty){qty=qty||1;v=v||'';const ex=cart.find(c=>c.id===id&&c.v===v);if(ex)ex.q+=qty;else cart.push({id,v,q:qty});save();render();toast('Dodato u korpu: '+P[id].name)}
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),2000)}
+const sub=()=>cart.reduce((s,c)=>s+P[c.id].price*c.q,0);
+const ship=()=>(sub()>=FREE||cart.some(c=>P[c.id].free))?0:SHIP;
+const shipTxt=()=>ship()?fmt(ship()):'besplatna';
+function lines(){return cart.map(c=>`<div class="tot" style="font-weight:600"><span>${c.q} &times; ${P[c.id].name}${c.v?`<br><small style="font-weight:400;color:var(--muted)">${esc(c.v)}</small>`:''}</span><span style="white-space:nowrap">${fmt(P[c.id].price*c.q)}</span></div>`).join('')}
+function render(){
+  const n=cart.reduce((s,c)=>s+c.q,0);$('#cnt').textContent=n||'';
+  const body=$('#dbody'),foot=$('#dfoot');
+  if(!cart.length){body.innerHTML='<div class="empty"><p style="font-family:Fraunces,serif;font-size:22px;color:var(--ink)">Korpa je prazna</p><p style="margin-top:8px">Izaberite Piktoknjigu ili komunikacijski predmet.</p></div>';foot.innerHTML='<a class="btn btn-p block" href="index.html#knjige">Pogledaj knjige</a>';return}
+  body.innerHTML=cart.map((c,i)=>`<div class="line"><img src="${P[c.id].img}" alt=""><div><div class="n">${P[c.id].name}</div>${c.v?`<div class="v">${esc(c.v)}</div>`:''}<div class="qty"><button data-d="-1" data-i="${i}" aria-label="Manje">&minus;</button><span>${c.q}</span><button data-d="1" data-i="${i}" aria-label="Više">+</button></div><button class="rm" data-rm="${i}">Ukloni</button></div><div style="font-weight:800;white-space:nowrap">${fmt(P[c.id].price*c.q)}</div></div>`).join('');
+  const left=FREE-sub();
+  foot.innerHTML=(ship()?`<div class="hint">Još ${fmt(left)} do besplatne dostave.</div>`:`<div class="hint">Dostava je besplatna.</div>`)+`<div class="tot"><span>Proizvodi</span><span>${fmt(sub())}</span></div><div class="tot"><span>Dostava</span><span>${shipTxt()}</span></div><div class="tot big"><span>Ukupno</span><span>${fmt(sub()+ship())}</span></div><button class="btn btn-p block" id="toCo" style="margin-top:12px">Nastavi na porudžbinu</button>`;
+}
+function drawer(o){$('#drawer').classList.toggle('on',o);$('#ovl').classList.toggle('on',o);$('#drawer').setAttribute('aria-hidden',!o);document.body.style.overflow=o?'hidden':''}
+$('#openCart').onclick=()=>drawer(true);$('#closeCart').onclick=()=>drawer(false);$('#ovl').onclick=()=>drawer(false);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){drawer(false);if($('#co').classList.contains('on'))closeCo()}});
+$('#dbody').onclick=e=>{const t=e.target;if(t.dataset.d){const c=cart[+t.dataset.i];c.q+=+t.dataset.d;if(c.q<1)cart.splice(+t.dataset.i,1);save();render()}if(t.dataset.rm){cart.splice(+t.dataset.rm,1);save();render()}};
+$('#dfoot').onclick=e=>{if(e.target.id==='toCo')openCo()};
+function totals(){return `<hr style="border:0;border-top:2px solid var(--line);margin:10px 0"><div class="tot"><span>Proizvodi</span><span>${fmt(sub())}</span></div><div class="tot"><span>Dostava (Post Express)</span><span>${shipTxt()}</span></div><div class="tot big"><span>Za plaćanje pouzećem</span><span>${fmt(sub()+ship())}</span></div>`}
+function openCo(){if(!cart.length)return;drawer(false);$('#coMain').hidden=false;$('#coDone').hidden=true;$('#co').classList.add('on');document.body.style.overflow='hidden';$('#co').scrollTop=0;$('#coSum').innerHTML=lines()+totals()}
+function closeCo(){$('#co').classList.remove('on');document.body.style.overflow=''}
+$('#backCart').onclick=()=>{closeCo();drawer(true)};
+$('#coForm').onsubmit=e=>{e.preventDefault();const f=e.target;let bad=null;
+  ['ime','tel','adresa','grad'].forEach(n=>{const i=f[n];const ok=i.value.trim()&&(n!=='tel'||i.checkValidity());if(!ok){i.style.borderColor='#d33';bad=bad||i}else i.style.borderColor=''});
+  if(bad){bad.focus();toast(bad.name==='tel'&&bad.value.trim()?'Proverite broj telefona':'Popunite obavezna polja');return}
+  const no='PK-'+Math.floor(10000+Math.random()*89999);
+  $('#doneTxt').textContent='Porudžbina '+no+' je primljena. Javljamo se telefonom radi potvrde, a paket šaljemo Post Express-om. Plaćate pouzećem pri preuzimanju.';
+  $('#doneSum').innerHTML='<p id="dn" style="font-weight:800"></p><hr style="border:0;border-top:2px solid var(--line);margin:10px 0">'+lines()+totals();
+  $('#dn').textContent=f.ime.value+', '+f.adresa.value+', '+(f.pb.value?f.pb.value+' ':'')+f.grad.value+' · '+f.tel.value;
+  cart=[];save();render();$('#coMain').hidden=true;$('#coDone').hidden=false;$('#co').scrollTop=0};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-add]');if(!b)return;e.preventDefault();
+  const id=b.dataset.add;let v=b.dataset.v||'';const box=b.closest('[data-opts]');
+  if(box){v=[...box.querySelectorAll('select')].map(s=>s.value).join(' · ')}
+  add(id,v,1)});
+$('#coForm').addEventListener('input',e=>{if(e.target.value.trim())e.target.style.borderColor=''});
+render();
+</script>
+</body></html>

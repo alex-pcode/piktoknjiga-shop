@@ -1,0 +1,264 @@
+<!doctype html><html lang="sr-Latn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
+<title>Deda i repa — Piktoknjiga sa piktogramom POMOĆ</title><meta name="description" content="Deda i repa: narodna priča sa PCS piktogramima, rečnikom i likovima za isecanje. 36 strana, 2.000 din. Dostava Post Express, plaćanje pouzećem."><link rel="icon" href="img/logo.jpg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"><style>
+:root{--red:#e8114a;--red-d:#b80c39;--yel:#f8c12b;--blue:#4091d8;--teal:#39b99a;--ink:#1f2430;--muted:#5d6472;--cream:#fffaf0;--paper:#fff;--line:#ece3d0;--soft:#fdf1d6;--r:20px;--shadow:0 14px 34px -18px rgba(31,36,48,.45)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button,select{font:inherit;cursor:pointer;color:inherit}button{background:none;border:0}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.1;color:var(--ink);letter-spacing:-.01em}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:14px 24px;border-radius:14px;font-weight:800;font-size:15px;border:2px solid var(--ink);transition:transform .15s,background .15s;white-space:nowrap}
+.btn-p{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 4px 0 var(--red-d)}.btn-p:hover{transform:translateY(-2px)}.btn-p:active{transform:translateY(2px);box-shadow:none}
+.btn-g{background:transparent;color:var(--ink)}.btn-g:hover{background:var(--ink);color:#fff}
+.btn.block{display:flex;width:100%}
+.dots{display:inline-flex;gap:5px;vertical-align:middle}.dots i{width:12px;height:12px;display:block}
+.dots i:nth-child(1){background:var(--blue);border-radius:3px}.dots i:nth-child(2){background:var(--teal);border-radius:3px}.dots i:nth-child(3){background:var(--yel);border-radius:50%}.dots i:nth-child(4){background:var(--red);border-radius:50% 50% 50% 0;transform:rotate(-45deg)}
+.announce{background:var(--ink);color:#fff;font-size:13px;font-weight:700;text-align:center;padding:9px 16px}
+.announce b{color:var(--yel)}
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,250,240,.95);backdrop-filter:blur(10px);border-bottom:2px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Fraunces,serif;font-weight:800;font-size:21px;color:var(--ink)}
+.logo img{width:44px;height:44px;object-fit:contain}
+nav.main{display:flex;gap:24px;font-weight:800;font-size:14px}nav.main a:hover,nav.main a.on{color:var(--red)}
+.cartbtn{display:flex;align-items:center;gap:8px;border:2px solid var(--ink);border-radius:14px;padding:9px 14px;font-weight:800;background:#fff}
+.cartbtn svg{width:20px;height:20px;stroke:var(--ink);fill:none;stroke-width:2}
+#cnt{background:var(--red);color:#fff;font-size:12px;min-width:20px;height:20px;border-radius:10px;display:grid;place-items:center;padding:0 5px}#cnt:empty{display:none}
+@media(max-width:860px){nav.main{display:none}}
+/* drawer */
+.ovl{position:fixed;inset:0;background:rgba(20,22,30,.5);z-index:70;opacity:0;pointer-events:none;transition:.2s}.ovl.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);background:var(--cream);z-index:75;transform:translateX(105%);transition:transform .25s;display:flex;flex-direction:column}.drawer.on{transform:none}
+.dhead{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:2px solid var(--line)}.dhead h3{font-size:22px}
+.x{width:38px;height:38px;border-radius:50%;border:2px solid var(--line);font-size:20px;line-height:1}
+.dbody{flex:1;overflow:auto;padding:12px 18px}.dfoot{padding:14px 18px;border-top:2px solid var(--line);background:#fff}
+.line{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:center}
+.line img{width:64px;height:64px;object-fit:cover;border-radius:12px;background:var(--line)}
+.line .n{font-weight:800;line-height:1.25}.line .v{font-size:13px;color:var(--muted)}
+.qty{display:inline-flex;align-items:center;border:2px solid var(--line);border-radius:12px;background:#fff;margin-top:6px}
+.qty button{width:34px;height:34px;font-weight:800;font-size:18px}.qty span{min-width:26px;text-align:center;font-weight:800}
+.rm{font-size:12px;color:var(--muted);text-decoration:underline;display:block;margin-top:4px}
+.tot span:last-child{white-space:nowrap}.tot{display:flex;justify-content:space-between;gap:12px;font-weight:700;padding:3px 0}.tot.big{font-size:19px;font-weight:800}
+.hint{font-size:13px;color:var(--muted);background:var(--soft);border-radius:10px;padding:8px 10px;margin:8px 0}
+.empty{text-align:center;color:var(--muted);padding:44px 0}
+/* checkout */
+.co{position:fixed;inset:0;z-index:90;background:var(--cream);overflow:auto;display:none}.co.on{display:block}
+.co .wrap{max-width:920px;padding-top:16px;padding-bottom:60px}
+.cohead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+.cogrid{display:grid;gap:22px}@media(min-width:800px){.cogrid{grid-template-columns:1.2fr 1fr}}
+.card{background:#fff;border:2px solid var(--line);border-radius:var(--r);padding:18px}.card h3{font-size:19px;margin-bottom:12px}
+label.f{display:block;font-weight:800;font-size:14px;margin-bottom:12px}
+label.f input,label.f textarea{display:block;width:100%;margin-top:4px;font:inherit;font-weight:600;padding:12px 14px;border:2px solid var(--line);border-radius:12px;background:#fff;color:var(--ink)}
+label.f input:focus,label.f textarea:focus{outline:0;border-color:var(--blue)}
+.two{display:grid;gap:12px}@media(min-width:520px){.two{grid-template-columns:1fr 1fr}}
+.pay{display:flex;gap:10px;align-items:flex-start;border:2px solid var(--teal);background:#eefaf6;border-radius:12px;padding:12px;font-weight:800}
+.pay small{display:block;font-weight:600;color:var(--muted)}
+.done{text-align:center;padding:40px 0}.done .ok{width:76px;height:76px;border-radius:50%;background:var(--teal);color:#fff;font-size:2.4rem;display:grid;place-items:center;margin:0 auto 16px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:12px 20px;border-radius:14px;font-weight:700;z-index:95;opacity:0;transition:.25s;pointer-events:none;max-width:92vw;text-align:center}.toast.on{opacity:1;transform:translate(-50%,0)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+section.block{padding:80px 0}
+.sec-head h2{font-size:clamp(28px,4vw,42px);margin-top:10px}.sec-head p{color:var(--muted);max-width:60ch;margin-top:10px;font-size:17px}
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+.rev{background:#fff;border:2px solid var(--line);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:12px;position:relative}
+.rev:before{content:"“";font-family:Fraunces,serif;font-size:56px;line-height:.6;color:var(--yel)}
+.rev p{font-size:16px;font-weight:600;flex:1}.rev b{font-size:13px;color:var(--red)}.rev small{font-weight:600;color:var(--muted)}
+@media(max-width:900px){.revs{grid-template-columns:1fr 1fr}}@media(max-width:600px){.revs{grid-template-columns:1fr}section.block{padding:56px 0}}
+details{border-bottom:2px solid var(--line);padding:16px 0}summary{cursor:pointer;list-style:none;font-weight:800;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";font-size:22px;line-height:1;transition:transform .2s;color:var(--red)}details[open] summary::after{transform:rotate(45deg)}
+details .inner{color:var(--muted);margin-top:10px;font-size:15px}
+footer{background:var(--ink);color:#d9dce3;padding:44px 0 28px;font-size:14px}
+footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}footer h4{color:#fff;font-family:Fraunces,serif;font-size:17px;margin-bottom:8px}
+footer a{text-decoration:underline;text-underline-offset:3px}footer li{list-style:none;margin:4px 0}
+footer .bot{border-top:1px solid #3a4050;margin-top:26px;padding-top:16px;font-size:12px;color:#9aa0ad}
+@media(max-width:760px){footer .cols{grid-template-columns:1fr}}
+select.sel{width:100%;padding:10px 12px;border:2px solid var(--line);border-radius:12px;background:#fff;font-weight:700;font-size:14px}
+.crumbs{font-size:13px;color:var(--muted);padding:18px 0 0}.crumbs a{text-decoration:underline}
+.pp{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;padding:20px 0 60px;align-items:start}
+.gallery,.info,.stage{min-width:0}
+.stage{border-radius:24px;overflow:hidden;background:#c8935a;aspect-ratio:1/1;border:2px solid var(--line)}
+.stage img{width:100%;height:100%;object-fit:cover}
+.thumbs{display:flex;gap:10px;margin-top:12px;overflow-x:auto;max-width:100%;padding-bottom:4px}
+.thumbs button{flex:0 0 78px;height:78px;border-radius:14px;overflow:hidden;border:3px solid transparent;background:var(--soft)}
+.thumbs button.on{border-color:var(--red)}.thumbs img{width:100%;height:100%;object-fit:cover}
+.info h1{font-size:clamp(34px,4.6vw,54px);margin:10px 0 8px}
+.info .by{color:var(--muted);font-weight:600}
+.price{font-size:32px;font-weight:800;margin:16px 0 4px}.price small{font-size:14px;color:var(--muted);font-weight:700}
+.info .lead{font-size:17px;color:#3d4350;margin:14px 0}
+.buy{display:flex;gap:12px;align-items:stretch;margin:18px 0 10px;flex-wrap:wrap}
+.buy .qty{margin:0}.buy .qty button{width:46px;height:50px}.buy .btn{flex:1;min-width:200px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.facts div{background:#fff;border:2px solid var(--line);border-radius:14px;padding:12px 14px;font-size:14px}.facts b{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+.ship{margin-top:14px;font-size:14px;color:var(--muted);display:grid;gap:4px}
+.inside{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.inside figure{background:#fff;border:2px solid var(--line);border-radius:var(--r);overflow:hidden}
+.inside img{width:100%;aspect-ratio:4/3;object-fit:cover}.inside figcaption{padding:16px 18px}.inside b{display:block;font-size:18px;font-family:Fraunces,serif;margin-bottom:4px}.inside span{color:var(--muted);font-size:15px}
+.ded{background:var(--ink);color:#fff;border-radius:28px;padding:44px;text-align:center;margin-top:10px}
+.ded p{font-family:Fraunces,serif;font-size:clamp(20px,2.6vw,28px);max-width:30ch;margin:12px auto 0;line-height:1.3}
+.more{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.more .pc{background:#fff;border:2px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.more .m{aspect-ratio:1/1;overflow:hidden}.more img{width:100%;height:100%;object-fit:cover}
+.more .b{padding:14px;display:flex;flex-direction:column;gap:6px}.more h3{font-size:18px}.more .pr{font-weight:800}
+.more .btn{padding:11px 12px;font-size:14px}
+.sticky{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:2px solid var(--line);padding:10px 16px;display:none;align-items:center;justify-content:space-between;gap:12px;z-index:60}
+.sticky b{font-size:15px}.sticky .btn{padding:12px 18px}
+@media(max-width:900px){.pp{grid-template-columns:1fr;gap:24px}.inside{grid-template-columns:1fr}.sticky{display:flex}body{padding-bottom:70px}}
+@media(max-width:560px){.facts{grid-template-columns:1fr 1fr}.more{grid-template-columns:1fr;gap:12px}.more .pc{flex-direction:row}.more .m{flex:0 0 116px;width:116px}.more .b{flex:1;justify-content:center;min-width:0}.ded{padding:30px 20px}.buy .btn{min-width:0}}
+
+</style></head><body>
+<div class="announce">Besplatna dostava za porudžbine od <b>3.000 din</b> · Post Express „danas za sutra“ · Plaćanje pouzećem</div>
+<header class="site"><div class="wrap">
+<a class="logo" href="index.html"><img src="img/logo.jpg" alt="Piktoknjiga logo"><span>Piktoknjiga</span></a>
+<nav class="main" aria-label="Glavna navigacija"><a class="on" href="deda-i-repa.html">Deda i repa</a><a href="index.html#knjige">Knjige</a><a href="index.html#pokret">Komunikacija u pokretu</a><a href="index.html#majice">Majice</a><a href="index.html#utisci">Utisci</a><a href="index.html#faq">Pitanja</a></nav>
+<button class="cartbtn" id="openCart" aria-label="Korpa"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Korpa<span id="cnt"></span></button>
+</div></header>
+<main><div class="wrap">
+<div class="crumbs"><a href="index.html">Početna</a> / <a href="index.html#knjige">Piktoknjige</a> / Deda i repa</div>
+<div class="pp">
+<div class="gallery"><div class="stage"><img id="mainImg" src="img/deda-cover.jpg" alt="Deda i repa, naslovnica" fetchpriority="high"></div>
+<div class="thumbs" id="thumbs">
+<button class="on" data-src="img/deda-cover.jpg" aria-label="Naslovnica"><img src="img/deda-cover.jpg" alt=""></button>
+<button data-src="img/deda-stack.jpg" aria-label="Knjige"><img src="img/deda-stack.jpg" alt=""></button>
+<button data-src="img/deda-open.jpg" aria-label="Prva strana"><img src="img/deda-open.jpg" alt=""></button>
+<button data-src="img/deda-spread.jpg" aria-label="Strana sa piktogramima"><img src="img/deda-spread.jpg" alt=""></button>
+<button data-src="img/deda-pomoc.jpg" aria-label="Piktogram pomoć"><img src="img/deda-pomoc.jpg" alt=""></button>
+<button data-src="img/deda-likovi.jpg" aria-label="Likovi za isecanje"><img src="img/deda-likovi.jpg" alt=""></button>
+<button data-src="img/deda-baba.jpg" aria-label="Ilustracija"><img src="img/deda-baba.jpg" alt=""></button>
+</div></div>
+<div class="info"><span class="eyebrow">Četvrta Piktoknjiga · novo</span>
+<h1>Deda i repa</h1>
+<div class="by">Prilagodila Biljana Stojanović · Ilustracije Maša Pavlović</div>
+<div class="price">2.000 din</div>
+<p class="lead">Poznata narodna priča, koju deca upoznaju i kroz školski program, sada dopunjena piktogramima. Priča o porodičnim vrednostima, zajedništvu i solidarnosti, koja uči da svako može da doprinese i da je u redu tražiti pomoć kada nam je potrebna.</p>
+<div class="buy"><div class="qty"><button id="qm" aria-label="Manje">&minus;</button><span id="qv">1</span><button id="qp" aria-label="Više">+</button></div><button class="btn btn-p" id="addMain">Dodaj u korpu</button></div>
+<div class="ship"><span>✓ Šaljemo Post Express-om, „danas za sutra“</span><span>✓ Besplatna dostava za porudžbine od 3.000 din (npr. uz još jednu knjigu)</span><span>✓ Plaćanje pouzećem</span></div>
+<div class="facts"><div><b>Strana</b>36</div><div><b>Piktogrami</b>međunarodni PCS sistem</div><div><b>Ključni simbol</b>POMOĆ</div><div><b>Dodaci</b>rečnik, likovi i pozadina</div></div>
+</div></div></div>
+
+<section class="block" style="padding-top:10px"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">Šta je u knjizi</span><h2>Čita se, pokazuje, slaže, prepričava, odglumi…</h2></div>
+<div class="inside">
+<figure><img src="img/deda-pomoc.jpg" alt="Prst pokazuje piktogram pomoć" loading="lazy"><figcaption><b>Piktogram POMOĆ</b><span>Simbol se ponavlja kroz priču, pa svaki put možemo da ga pokažemo i tako detetu približimo njegovo značenje i upotrebu.</span></figcaption></figure>
+<figure><img src="img/deda-spread.jpg" alt="Strana knjige sa tekstom u piktogramima" loading="lazy" style="object-position:center 60%"><figcaption><b>Rečnik piktograma</b><span>Na kraju knjige su ključni pojmovi iz priče, koji se mogu koristiti u svakodnevnom životu.</span></figcaption></figure>
+<figure><img src="img/deda-likovi.jpg" alt="Isecanje likova iz knjige" loading="lazy" style="object-position:center 30%"><figcaption><b>Likovi i pozadina za igru</b><span>Likove možete iseći, plastificirati i dodati čičak, pa ih ređati na pozadinu dok zajedno prepričavate priču.</span></figcaption></figure>
+</div>
+<div class="sec-head" style="margin-top:48px"><span class="eyebrow">Igra posle čitanja</span><h2 style="font-size:clamp(24px,3vw,32px)">Ko je prvi, a ko poslednji?</h2><p>Sa likovima možemo da prebrojavamo, odvajamo životinje na jednu gomilu, ljude na drugu i vežbamo odnose i položaje: ko je ispred, a ko iza, ko je u sredini. Tako knjiga postaje prostor za igru, učenje i zajedničko učešće roditelja, vaspitača i druge dece.</p></div>
+</div></section>
+
+<section class="block" style="padding-top:0"><div class="wrap">
+<div class="ded"><span class="eyebrow" style="color:var(--yel)">Posveta na početku knjige</span><p>„Za sve koji umeju da zatraže i prihvate pomoć i veruju da i najslabiji među nama može biti snažan ako mu damo šansu da doprinese.“</p></div>
+</div></section>
+
+<section class="block" style="padding-top:0"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">#vašiutisci</span><h2>Mame javljaju</h2><p>Utisci roditelja o Piktoknjigama, preneti onako kako su ih napisali.</p></div>
+<div class="revs">
+<div class="rev"><p>Upravo smo pročitali celu knjigu i mladi gospodin je pratio svaki korak. Zaista je knjiga jako dobro urađena i savršena za neverbalnu decu bez obzira na uzrast.</p><b>Mama <small>· poruka Piktoknjizi</small></b></div>
+<div class="rev"><p>Nisam ni znala da je moguće na tako jasan i prijemčiv način im omogućiti da prate priču</p><b>Mama <small>· poruka Piktoknjizi</small></b></div>
+<div class="rev"><p>Radujemo se novim naslovima. Knjiga je odlična ,za djecu koja imaju poteskoce .Tako je lijepo osmisljena da ih zainteresuje</p><b>Mama <small>· poruka Piktoknjizi</small></b></div>
+</div></div></section>
+
+<section class="block" style="padding-top:0"><div class="wrap" style="max-width:800px">
+<div class="sec-head"><span class="eyebrow">Pitanja</span><h2>Pre nego što poručite</h2></div>
+<div style="margin-top:20px;border-top:2px solid var(--line)">
+<details><summary>Za koji uzrast je knjiga?</summary><div class="inner"><p>„Deda i repa“ je priča koju deca upoznaju i kroz školski program, a piktogrami je čine dostupnom i deci koja tek uče da čitaju ili kojoj je potrebna vizuelna podrška. Piktoknjige su za svu decu.</p></div></details>
+<details><summary>Kako da koristim simbol POMOĆ van knjige?</summary><div class="inner"><p>Modelujte: kada vidite da je detetu potrebna pomoć, pokažite simbol i recite „Treba ti pomoć. Pomoć.“, pa pomozite. Ne očekujemo da dete odmah samo počne da koristi simbol; kroz ponavljanje ga vremenom samo upotrebi kada mu je pomoć potrebna.</p></div></details>
+<details><summary>Kada stiže knjiga i kako plaćam?</summary><div class="inner"><p>Šaljemo Post Express-om, uslugom „danas za sutra“. Plaćate pouzećem kuriru. Za porudžbine od 3.000 din i više dostava je besplatna.</p></div></details>
+</div>
+<p style="text-align:center;margin-top:24px;color:var(--muted)">Pitanja? <a href="https://www.instagram.com/piktoknjiga/" target="_blank" rel="noopener" style="color:var(--red);font-weight:800;text-decoration:underline">Pišite nam na Instagramu</a></p>
+</div></section>
+
+<section class="block" style="padding-top:0"><div class="wrap">
+<div class="sec-head"><span class="eyebrow">Uz Dedu i repu</span><h2>Ostale Piktoknjige</h2><p>Dve knjige i dostava je besplatna.</p></div>
+<div class="more">
+<article class="pc"><div class="m"><img src="img/tom-sojer.jpg" alt="Tom Sojer farba ogradu" loading="lazy"></div><div class="b"><h3>Tom Sojer farba ogradu</h3><div class="pr">2.000 din</div><button class="btn btn-p block" data-add="tom">Dodaj u korpu</button></div></article>
+<article class="pc"><div class="m"><img src="img/tri-praseta.jpg" alt="Tri praseta" loading="lazy"></div><div class="b"><h3>Tri praseta</h3><div class="pr">2.000 din</div><button class="btn btn-p block" data-add="praseta">Dodaj u korpu</button></div></article>
+<article class="pc"><div class="m"><img src="img/zlatokosa.jpg" alt="Zlatokosa i tri medveda" loading="lazy"></div><div class="b"><h3>Zlatokosa i tri medveda</h3><div class="pr">2.000 din</div><button class="btn btn-p block" data-add="zlatokosa">Dodaj u korpu</button></div></article>
+</div></div></section>
+</main>
+<div class="sticky"><div><b>Deda i repa</b><br><span style="font-weight:800">2.000 din</span></div><button class="btn btn-p" data-add="deda">Dodaj u korpu</button></div>
+<footer><div class="wrap"><div class="cols">
+<div><a class="logo" href="index.html" style="color:#fff"><img src="img/logo.jpg" alt="" style="background:#fff;border-radius:10px;padding:3px"><span>Piktoknjiga</span></a>
+<p style="margin-top:12px;max-width:42ch">Jedinstvene knjige za početnike u čitanju i decu kojoj je potrebna dodatna vizuelna podrška. Piktoknjige su za svu decu.</p></div>
+<div><h4>Prodavnica</h4><ul><li><a href="deda-i-repa.html">Deda i repa</a></li><li><a href="index.html#knjige">Sve Piktoknjige</a></li><li><a href="index.html#pokret">Komunikacija u pokretu</a></li><li><a href="index.html#majice">Majice Savršen par</a></li></ul></div>
+<div><h4>Pomoć</h4><ul><li>Dostava: Post Express, „danas za sutra“</li><li>Besplatna dostava od 3.000 din</li><li>Plaćanje pouzećem</li><li><a href="https://www.instagram.com/piktoknjiga/" target="_blank" rel="noopener">Pitanja? Pišite nam na Instagramu @piktoknjiga</a></li></ul></div>
+</div><div class="bot">© 2026 Piktoknjiga · Tekst praćen piktogramima iz međunarodnog PCS sistema</div></div></footer>
+<div class="ovl" id="ovl"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Korpa"><div class="dhead"><h3>Vaša korpa</h3><button class="x" id="closeCart" aria-label="Zatvori">&times;</button></div><div class="dbody" id="dbody"></div><div class="dfoot" id="dfoot"></div></aside>
+<div class="co" id="co"><div class="wrap">
+<div class="cohead"><a class="logo" href="index.html"><img src="img/logo.jpg" alt=""><span>Piktoknjiga</span></a><button class="btn btn-g" id="backCart" type="button">&larr; Korpa</button></div>
+<div id="coMain"><h2 style="font-size:30px;margin-bottom:16px">Porudžbina</h2>
+<form id="coForm" novalidate><div class="cogrid"><div>
+<div class="card"><h3>Podaci za dostavu</h3>
+<label class="f">Ime i prezime<input name="ime" autocomplete="name" required></label>
+<div class="two"><label class="f">Telefon<input name="tel" type="tel" autocomplete="tel" pattern="\+?[0-9][0-9 \/\(\)\-]{5,}" required></label><label class="f">Email (nije obavezno)<input name="mail" type="email" autocomplete="email"></label></div>
+<label class="f">Adresa (ulica i broj)<input name="adresa" autocomplete="street-address" required></label>
+<div class="two"><label class="f">Grad / mesto<input name="grad" autocomplete="address-level2" required></label><label class="f">Poštanski broj<input name="pb" inputmode="numeric" autocomplete="postal-code"></label></div>
+<label class="f">Napomena (nije obavezno)<textarea name="nap" rows="2" placeholder="npr. posveta, poklon pakovanje, vreme dostave"></textarea></label></div>
+<div class="card" style="margin-top:16px"><h3>Plaćanje</h3><div class="pay"><input type="radio" checked aria-label="Pouzećem"><div>Plaćanje pouzećem<small>Plaćate kuriru Post Express-a kada preuzmete paket.</small></div></div></div>
+</div><div><div class="card" style="position:sticky;top:12px"><h3>Pregled porudžbine</h3><div id="coSum"></div><button class="btn btn-p block" type="submit" style="margin-top:14px">Potvrdi porudžbinu</button><p style="font-size:12px;color:var(--muted);margin-top:10px;text-align:center">Javljamo se telefonom radi potvrde pre slanja.</p></div></div></div></form></div>
+<div id="coDone" class="done" hidden><div class="ok">&#10003;</div><h2 style="font-size:30px">Hvala na porudžbini!</h2><p style="margin:12px auto;max-width:480px" id="doneTxt"></p><div class="card" style="max-width:480px;margin:18px auto;text-align:left" id="doneSum"></div><a class="btn btn-p" href="index.html">Nazad na prodavnicu</a></div>
+</div></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const P={
+ deda:{name:'Deda i repa',price:2000,img:'img/deda-cover.jpg'},
+ tom:{name:'Tom Sojer farba ogradu',price:2000,img:'img/tom-sojer.jpg'},
+ praseta:{name:'Tri praseta',price:2000,img:'img/tri-praseta.jpg'},
+ zlatokosa:{name:'Zlatokosa i tri medveda',price:2000,img:'img/zlatokosa.jpg'},
+ majica:{name:'Majica „Savršen par“',price:2500,img:'img/majice.jpg'},
+ par:{name:'Majice „Savršen par“ – par',price:5000,img:'img/majice.jpg',free:1},
+ ceger:{name:'Ceger za prodavnicu',price:1750,img:'img/ceger.jpg'},
+ ranac:{name:'Ranac „Škola“',price:2500,img:'img/ranac.jpg'},
+ pack:{name:'Back to School Pack',price:5000,img:'img/ranac-set.jpg',free:1},
+ pernica:{name:'Pernica',price:1500,img:'img/pernica.jpg'}
+};
+const SHIP=450,FREE=3000;
+const fmt=n=>n.toLocaleString('de-DE')+' din';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+let cart=[];try{cart=JSON.parse(localStorage.getItem('pikto-cart')||'[]')}catch(e){}
+cart=cart.filter(c=>P[c.id]);
+const save=()=>{try{localStorage.setItem('pikto-cart',JSON.stringify(cart))}catch(e){}};
+function add(id,v,qty){qty=qty||1;v=v||'';const ex=cart.find(c=>c.id===id&&c.v===v);if(ex)ex.q+=qty;else cart.push({id,v,q:qty});save();render();toast('Dodato u korpu: '+P[id].name)}
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),2000)}
+const sub=()=>cart.reduce((s,c)=>s+P[c.id].price*c.q,0);
+const ship=()=>(sub()>=FREE||cart.some(c=>P[c.id].free))?0:SHIP;
+const shipTxt=()=>ship()?fmt(ship()):'besplatna';
+function lines(){return cart.map(c=>`<div class="tot" style="font-weight:600"><span>${c.q} &times; ${P[c.id].name}${c.v?`<br><small style="font-weight:400;color:var(--muted)">${esc(c.v)}</small>`:''}</span><span style="white-space:nowrap">${fmt(P[c.id].price*c.q)}</span></div>`).join('')}
+function render(){
+  const n=cart.reduce((s,c)=>s+c.q,0);$('#cnt').textContent=n||'';
+  const body=$('#dbody'),foot=$('#dfoot');
+  if(!cart.length){body.innerHTML='<div class="empty"><p style="font-family:Fraunces,serif;font-size:22px;color:var(--ink)">Korpa je prazna</p><p style="margin-top:8px">Izaberite Piktoknjigu ili komunikacijski predmet.</p></div>';foot.innerHTML='<a class="btn btn-p block" href="index.html#knjige">Pogledaj knjige</a>';return}
+  body.innerHTML=cart.map((c,i)=>`<div class="line"><img src="${P[c.id].img}" alt=""><div><div class="n">${P[c.id].name}</div>${c.v?`<div class="v">${esc(c.v)}</div>`:''}<div class="qty"><button data-d="-1" data-i="${i}" aria-label="Manje">&minus;</button><span>${c.q}</span><button data-d="1" data-i="${i}" aria-label="Više">+</button></div><button class="rm" data-rm="${i}">Ukloni</button></div><div style="font-weight:800;white-space:nowrap">${fmt(P[c.id].price*c.q)}</div></div>`).join('');
+  const left=FREE-sub();
+  foot.innerHTML=(ship()?`<div class="hint">Još ${fmt(left)} do besplatne dostave.</div>`:`<div class="hint">Dostava je besplatna.</div>`)+`<div class="tot"><span>Proizvodi</span><span>${fmt(sub())}</span></div><div class="tot"><span>Dostava</span><span>${shipTxt()}</span></div><div class="tot big"><span>Ukupno</span><span>${fmt(sub()+ship())}</span></div><button class="btn btn-p block" id="toCo" style="margin-top:12px">Nastavi na porudžbinu</button>`;
+}
+function drawer(o){$('#drawer').classList.toggle('on',o);$('#ovl').classList.toggle('on',o);$('#drawer').setAttribute('aria-hidden',!o);document.body.style.overflow=o?'hidden':''}
+$('#openCart').onclick=()=>drawer(true);$('#closeCart').onclick=()=>drawer(false);$('#ovl').onclick=()=>drawer(false);
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){drawer(false);if($('#co').classList.contains('on'))closeCo()}});
+$('#dbody').onclick=e=>{const t=e.target;if(t.dataset.d){const c=cart[+t.dataset.i];c.q+=+t.dataset.d;if(c.q<1)cart.splice(+t.dataset.i,1);save();render()}if(t.dataset.rm){cart.splice(+t.dataset.rm,1);save();render()}};
+$('#dfoot').onclick=e=>{if(e.target.id==='toCo')openCo()};
+function totals(){return `<hr style="border:0;border-top:2px solid var(--line);margin:10px 0"><div class="tot"><span>Proizvodi</span><span>${fmt(sub())}</span></div><div class="tot"><span>Dostava (Post Express)</span><span>${shipTxt()}</span></div><div class="tot big"><span>Za plaćanje pouzećem</span><span>${fmt(sub()+ship())}</span></div>`}
+function openCo(){if(!cart.length)return;drawer(false);$('#coMain').hidden=false;$('#coDone').hidden=true;$('#co').classList.add('on');document.body.style.overflow='hidden';$('#co').scrollTop=0;$('#coSum').innerHTML=lines()+totals()}
+function closeCo(){$('#co').classList.remove('on');document.body.style.overflow=''}
+$('#backCart').onclick=()=>{closeCo();drawer(true)};
+$('#coForm').onsubmit=e=>{e.preventDefault();const f=e.target;let bad=null;
+  ['ime','tel','adresa','grad'].forEach(n=>{const i=f[n];const ok=i.value.trim()&&(n!=='tel'||i.checkValidity());if(!ok){i.style.borderColor='#d33';bad=bad||i}else i.style.borderColor=''});
+  if(bad){bad.focus();toast(bad.name==='tel'&&bad.value.trim()?'Proverite broj telefona':'Popunite obavezna polja');return}
+  const no='PK-'+Math.floor(10000+Math.random()*89999);
+  $('#doneTxt').textContent='Porudžbina '+no+' je primljena. Javljamo se telefonom radi potvrde, a paket šaljemo Post Express-om. Plaćate pouzećem pri preuzimanju.';
+  $('#doneSum').innerHTML='<p id="dn" style="font-weight:800"></p><hr style="border:0;border-top:2px solid var(--line);margin:10px 0">'+lines()+totals();
+  $('#dn').textContent=f.ime.value+', '+f.adresa.value+', '+(f.pb.value?f.pb.value+' ':'')+f.grad.value+' · '+f.tel.value;
+  cart=[];save();render();$('#coMain').hidden=true;$('#coDone').hidden=false;$('#co').scrollTop=0};
+document.addEventListener('click',e=>{const b=e.target.closest('[data-add]');if(!b)return;e.preventDefault();
+  const id=b.dataset.add;let v=b.dataset.v||'';const box=b.closest('[data-opts]');
+  if(box){v=[...box.querySelectorAll('select')].map(s=>s.value).join(' · ')}
+  add(id,v,1)});
+$('#coForm').addEventListener('input',e=>{if(e.target.value.trim())e.target.style.borderColor=''});
+render();
+</script>
+<script>
+(function(){let q=1;const qv=document.getElementById('qv');
+document.getElementById('qm').onclick=()=>{q=Math.max(1,q-1);qv.textContent=q};
+document.getElementById('qp').onclick=()=>{q++;qv.textContent=q};
+document.getElementById('addMain').onclick=()=>{add('deda','',q);q=1;qv.textContent=1};
+const main=document.getElementById('mainImg');
+document.getElementById('thumbs').onclick=e=>{const b=e.target.closest('button');if(!b)return;main.src=b.dataset.src;document.querySelectorAll('#thumbs button').forEach(x=>x.classList.toggle('on',x===b))};})();
+</script></body></html>
